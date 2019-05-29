@@ -1,0 +1,215 @@
+/* if it's class, then we use ., if it's id, then #*/
+
+/* LAST CSS RULE HAS THE PRIORITY OVER ANYTHING ABOVE IT */
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title section */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  /* When the color property is here, then when I add something later on in the title section, it will inherit the same color */
+  text-align: left;
+ }
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+/* Title image */
+
+.iphone {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  left: 30%;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+  padding: 0 0 40px 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Download buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Features */
+
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.features-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.icon {
+  width: 100px;
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials {
+  background-color: #ef8172;
+  /* IDs are most specific so their styles will be applied as last over any other previous setup. Then classes, then HTML. BUT IF
+  THERE IS A STYLE APPLIED DIRECTLY TO HMTL AS STYLE="COLOR: RED", THEN THAT ONE WILL BE APPLIED AS THE LAST ONE - BUT THIS IS
+  A VEEEERY BAAAAAD PRACTICE SO DON'T USE IN-LINE STYLES */
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Press section */
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 100px;
+/* Padding usually is not static all the same everywhere but with pricing it's good to have some */
+}
+
+.price-text {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Final section */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #fff;
+}
+
+.social {
+  margin: 3% 1% 1% 0;
+}
+
+/* Media queries */
+
+@media (max-width: 990px) {
+
+#title .container-fluid {
+  text-align: center;
+}
+
+  .iphone {
+    position: static;
+    transform: rotate(0);
+    left: 0;
+  }
+}
+
+/*IDs should be used sparingly, only for big sections on our website. But if I am using bootstrap carousel or elements, they need the
+ID to be carried out. */
