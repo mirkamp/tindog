@@ -200,6 +200,10 @@ p {
 
 @media (max-width: 990px) {
 
+div#navbarNav {
+  text-align: right;
+}
+
 #title .container-fluid {
   text-align: center;
 }
